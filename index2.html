@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Web Portofolio Abah Mujib</title>
+    <link rel="shortcut icon" href="LOGO CHANNEL.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2; /* Warna latar belakang untuk konten */
+            color: #333; /* Warna teks umum */
+        }
+
+        header {
+            background-color: #4a90e2; /* Warna latar belakang header */
+            color: #fff; /* Warna teks di header */
+            padding: 10px;
+            display: flex;
+            justify-content: space-between; /* Menyusun item ke kiri dan kanan dengan jarak yang merata */
+            align-items: center; /* Menyelaraskan item di tengah secara vertikal */
+            position: static;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+            font-size: 18px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            transition: color 0.3s ease; /* Transisi warna teks saat hover */
+        }
+
+        nav ul li a:hover {
+            color: #e0e0e0; /* Warna teks saat hover */
+        }
+
+        .logo h1 {
+            margin: 0;
+            font-size: 24px;
+            color: #fff;
+        }
+
+        #about {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            padding: 40px;
+            background-color: #fff; /* Warna latar belakang konten */
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Bayangan untuk efek 3D */
+            margin: 20px auto;
+            max-width: 800px; /* Lebar maksimum konten */
+        }
+
+        .img1 {
+            flex: 1;
+            margin-right: 20px;
+        }
+
+        .img1 img {
+            width: 90%;
+            border-radius: 10px;
+        }
+
+        .conten1 {
+            flex: 1;
+            color: #333;
+            
+        }
+
+        .conten1 h3 {
+            color: #000000;
+        }
+
+        .conten1 h2 {
+            color: rgb(0, 0, 0);
+        }
+
+        .conten1 p {
+            color: #666;
+            line-height: 1.6;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #4a90e2;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            
+            align-items: center;
+            gap: 10px; /* Jarak antara ikon dan teks */
+        }
+
+        button i {
+            font-size: 18px; /* Ukuran ikon */
+        }
+
+        button:hover {
+            background-color: #357dc9;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 3px;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+        }
+
+        #skill {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            padding: 40px;
+            background-color: #fff; /* Warna latar belakang konten */
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Bayangan untuk efek 3D */
+            margin: 20px auto;
+            max-width: 800px; /* Lebar maksimum konten */
+        }
+
+        #skill section {
+            background-color: #357dc9;
+            color: white;
+            margin: 15px;
+            padding: 15px;
+            border-radius: 20px; 
+            text-align: center;           
+        }
+
+        #contact {
+            padding: 40px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin: 20px auto;
+            max-width: 800px;
+        }
+
+        #contact h2 {
+            margin-bottom: 20px;
+            color: #4a90e2;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            color: #333;
+        }
+
+        .form-group input, .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+            box-sizing: border-box;
+        }
+
+        .form-group textarea {
+            height: 100px;
+            resize: vertical;
+        }
+
+        .form-group button {
+            background-color: #4a90e2;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .form-group button:hover {
+            background-color: #357dc9;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Hello Selamat Datang</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skill">Skill</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <article id="about">
+            <div class="img1">
+                <img src="FOTO JAS HITAM NAJIBB.jpg" alt="pict">
+            </div>
+            <div class="conten1">
+                <h3>My Name is</h3>
+                <h2>Maulana Ainun Nadjib</h2>
+                <p>Sebagai pelajar dengan rencana kelulusan pada tahun 2025, Memiliki pengetahuan praktis dan kemampuan teknis yang kuat.
+                    Aktif mencari pengalaman dan membangun jaringan selama masa sekolah melalui berbagai kegiatan. Siap berkontribusi penuh untuk posisi yang dilamar dengan keterampilan komunikasi, kepemimpinan, kerja tim, dan manajemen proyek yang telah diasah.</p>
+                <button>
+                    <i class="fas fa-file-alt"></i> View CV
+                </button>
+                <button>
+                    <i class="fab fa-linkedin"></i> LinkedIn
+                </button>
+                <button>
+                    <i class="fab fa-whatsapp"></i> WhatsApp
+                </button>
+            </div>
+        </article>
+
+        <!-- Artikel Skill -->
+        <article id="skill">
+            <section>
+                <img src="FOTO JARINGAN.png" alt="Jaringan" width="200px">
+                <h3>Jaringan</h3>
+                <p>Kemampuan dalam merancang dan memelihara jaringan komputer.</p>
+            </section>
+            <section>
+                <img src="FOTO PEMROGRAMAN.png" alt="Pemrograman" width="200px">
+                <h3>Pemrograman</h3>
+                <p>Keterampilan dalam menulis, menguji, dan memelihara kode.</p>
+            </section>
+            <section>
+                <img src="FOTO DESAIN.png" alt="Desain Grafis" width="200px">
+                <h3>Desain Grafis</h3>
+                <p>Keahlian dalam membuat desain visual menggunakan software grafis.</p>
+            </section>
+            
+            
+        </article>
+
+        <!-- Artikel Contact -->
+        <article id="contact">
+            <h2>Contact Me</h2>
+            <form action="#" method="post">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+                <div class="form-group">
+                    <button type="submit">Send Message</button>
+                </div>
+            </form>
+        </article>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2024 PT. Mencari Cinta Sejati. Hak cipta dilindungi.</p>
+    </footer>
+</body>
+</html>
